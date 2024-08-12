@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: hsl(220, 13%, 18%);
+  color: hsl(0, 0%, 100%);
+}
+
+.countdown {
+  text-align: center;
+}
+
+.countdown div {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.countdown div span {
+  display: block;
+  font-size: 2rem;
+}
+
+.label {
+  font-size: 1rem;
+  color: hsl(0, 0%, 67%);
+}
+
+@media (max-width: 48rem) {
+  .countdown div span {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .countdown div {
+    margin: 0 0.25rem;
+  }
+
+  .countdown div span {
+    font-size: 1.25rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+  }
+}
